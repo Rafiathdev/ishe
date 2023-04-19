@@ -88,7 +88,7 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>inscription_recruteur</title>
  
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -565,7 +565,7 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& 
                                         </form>
                                     </div>
                                     <div class="login_message">
-                                        <p>Avez vous deja un compte? <a href="#"> connexion </a> </p>
+                                        <p>Avez vous deja un compte? <a href="login.php"> connexion </a> </p>
                                     </div>
 
                             <div class="tab-content">
@@ -573,8 +573,6 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& 
                                 <div class="tab-pane fade register_left_form" id="contentOne">
                                                                     </div>
                             </div>
-                            <p class="btm_txt_register_form">In case you are using a public/shared computer we recommend
-                                that you logout to prevent any un-authorized access to your account</p>
                         </div>
                     </div>
                 </div>
@@ -708,7 +706,7 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& 
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                     <div class="jp_bottom_footer_left_cont">
-                                        <p>© 2022-23 Job Pro. All Rights Reserved.</p>
+                                        <p>© 2022-23 ISHEDE. Projet de soutenance: Gestion de recrutement</p>
                                     </div>
                                     <div class="jp_bottom_top_scrollbar_wrapper">
                                         <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>

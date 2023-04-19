@@ -94,20 +94,16 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="jp_top_header_left_wrapper">
                         <div class="jp_top_header_left_cont">
-                            <p><i class="fa fa-phone"></i> &nbsp;Phone &nbsp;+123456789</p>
-                            <p class=""><i class="fa fa-envelope"></i> &nbsp;Email :&nbsp;<a
-                                    href="#"><span class="__cf_email__" data-cfemail="8bcee6eae2e7cbeef3eae6fbe7eea5e8e4e6">[email&#160;protected]</span></a></p>
+                        <p><i class="fa fa-phone"></i> &nbsp;Phone &nbsp;+229 00 00 00 00</p>
+							<p class=""><i class="fa fa-envelope"></i> &nbsp;Email :&nbsp;<a href="#"><span class="__cf_email__" data-cfemail="9cd9f1fdf5f0dcf9e4fdf1ecf0f9b2fff3f1">Ishede@gmail.com</span></a>
+						</p>
+						
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="jp_top_header_right_wrapper">
-                        <div class="jp_top_header_right_cont">
-                            <ul>
-                                <li><a href="register.html"><i class="fa fa-user"></i>&nbsp; SIGN UP</a></li>
-                                <li><a href="login.html"><i class="fa fa-sign-in"></i>&nbsp; LOGIN</a></li>
-                            </ul>
-                        </div>
+                        
                         <div class="jp_top_header_right__social_cont">
                             <ul>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -132,49 +128,36 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-xs hidden-sm full_width">
                         <div class="gc_header_wrapper">
                             <div class="gc_logo">
-                                <a href="index.html"><img src="images/header/logo2.png" alt="Logo" title="Job Pro"
+                                <a href="index.html"><img src="images/header/logo.png" alt="Logo" title="Job Pro"
                                         class="img-responsive"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 full_width">
-                        <div class="header-area hidden-menu-bar stick" id="sticker">
-                            <!-- mainmenu start -->
-                            <div class="mainmenu">
-                                <div class="gc_right_menu">
-                                    <ul>
-                                        <li id="search_button">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_3"
-                                                x="0px" y="0px" viewBox="0 0 451 451"
-                                                style="enable-background:new 0 0 451 451;" xml:space="preserve">
-                                                <g>
-                                                    <path id="search"
-                                                        d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z"
-                                                        fill="#23c0e9" />
-                                                </g>
-                                            </svg>
-                                        </li>
-                                        <li>
-                                            <div id="search_open" class="gc_search_box">
-                                                <input type="text" placeholder="Search here">
-                                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <ul class="float_left">
-                                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">
-                                            Home&nbsp;<i class="fa fa-angle-down"></i></a>
-                                        <!-- mega menu start -->
-                                        <ul>
-                                            <li class="parent"><a href="index.html">Home1</a></li>
-                                            
-                                            <li class="parent"><a href="index_vi.html">Home6</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">
-                                            Job&nbsp;<i class="fa fa-angle-down"></i></a>
+                    <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 center_responsive">
+						<div class="header-area hidden-menu-bar stick" id="sticker">
+							<!-- mainmenu start -->
+							<div class="mainmenu">
+								<div class="gc_right_menu">
+									<ul>
+										<li id="search_button">
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_3" x="0px" y="0px" viewBox="0 0 451 451" style="enable-background:new 0 0 451 451;" xml:space="preserve">
+												<g>
+													<path id="search" d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z" fill="#00e2bd" />
+												</g>
+											</svg>
+										</li>
+										<li>
+											<div id="search_open" class="gc_search_box">
+												<input type="text" placeholder="Search here">
+												<button><i class="fa fa-search" aria-hidden="true"></i>
+												</button>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<ul class="float_left">
+                                   
+                                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Offres&nbsp;<i class="fa fa-angle-down"></i></a>
                                         <!-- mega menu start -->
                                         <ul>
                                             
@@ -182,101 +165,71 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
 
                                         </ul>
                                     </li>
-                                    <li class="parent gc_main_navigation"><a href="#"
-                                            class="gc_main_navigation">candidates &nbsp;<i
-                                                class="fa fa-angle-down"></i></a>
+                                    <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">Utilisateur &nbsp;<i class="fa fa-angle-down"></i></a>
                                         <!-- sub menu start -->
                                         <ul>
-
-                                            <li class="parent"><a href="company_listing.html">Company-Listing</a></li>
-                                            <li class="parent"><a href="company_listing_single.html">Company-Single</a>
-                                            </li>
-                                            <li class="parent"><a href="candidate_listing.html">candidate-Listing</a>
-                                            </li>
-                                            <li class="parent"><a href="candidate_profile.html">candidate-Profile</a>
-                                            </li>
-
-
+                                           
+                                            <li class="parent"><a href="company_listing.html">Listes d'entreprise</a></li>
+                                            <li class="parent"><a href="company_listing_single.html">Company-Single</a></li>
+                                            <li class="parent"><a href="candidate_listing.html">Liste des candidats</a></li>
+                                            <li class="parent"><a href="candidate_profile.html">Profil Candidat</a></li>
+                                           
+                                               
                                         </ul>
                                         <!-- sub menu end -->
                                     </li>
-                                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">
-                                            Pages&nbsp;<i class="fa fa-angle-down"></i></a>
+									<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  A propos&nbsp;</a>
                                         <!-- mega menu start -->
-                                        <ul>
-                                            <li class="parent"><a href="about.html">About-Us</a></li>
-                                            
-                                            <li class="parent"><a href="add_postin.html">Add-Posting</a></li>
-                                            <li class="parent"><a href="login.html">Login</a></li>
-                                            <li class="parent"><a href="register.html">Register</a></li>
-                                            
-                                        </ul>
+                                        
                                     </li>
-                                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">
-                                            Blog&nbsp;<i class="fa fa-angle-down"></i></a>
+                                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Blog&nbsp;<i class="fa fa-angle-down"></i></a>
                                         <!-- mega menu start -->
                                         <ul>
                                             <li class="parent"><a href="blog_left.html">Blog-Left</a></li>
                                             <li class="parent"><a href="blog_right.html">Blog-Right</a></li>
-                                         
-                                            </li>
-
+                                            
                                         </ul>
                                     </li>
-                                    <li class="gc_main_navigation parent"><a href="contact.html"
-                                            class="gc_main_navigation">Contact</a></li>
+                                    <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contact</a></li>
                                 </ul>
-                            </div>
-                            <!-- mainmenu end -->
-                            <!-- mobile menu area start -->
-                            <header class="mobail_menu">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-xs-6 col-sm-6">
-                                            <div class="gc_logo">
-                                                <a href="index.html"><img src="images/header/logo2.png" alt="Logo"
-                                                        title="Grace Church"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-6">
-                                            <div class="cd-dropdown-wrapper">
-                                                <a class="house_toggle" href="#0">
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                                                        id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177"
-                                                        style="enable-background:new 0 0 31.177 31.177;"
-                                                        xml:space="preserve" width="25px" height="25px">
-                                                        <g>
-                                                            <g>
-                                                                <path class="menubar"
-                                                                    d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z"
-                                                                    fill="#000000" />
-                                                            </g>
-                                                            <g>
-                                                                <path class="menubar"
-                                                                    d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z"
-                                                                    fill="#000000" />
-                                                            </g>
-                                                            <g>
-                                                                <path class="menubar"
-                                                                    d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z"
-                                                                    fill="#000000" />
-                                                            </g>
-                                                            <g>
-                                                                <path class="menubar"
-                                                                    d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z"
-                                                                    fill="#000000" />
-                                                            </g>
-                                                            <g>
-                                                                <path class="menubar"
-                                                                    d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z"
-                                                                    fill="#000000" />
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                                <nav class="cd-dropdown">
-                                                    <h2><a href="#">Job<span>Pro</span></a></h2>
+							</div>
+							<!-- mainmenu end -->
+							<!-- mobile menu area start -->
+							<header class="mobail_menu">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-xs-6 col-sm-6">
+											<div class="gc_logo">
+												<a href="index.html">
+													<img src="images/index_vi/logo.png" alt="Logo" title="Grace Church">
+												</a>
+											</div>
+										</div>
+										<div class="col-xs-6 col-sm-6">
+											<div class="cd-dropdown-wrapper">
+												<a class="house_toggle" href="#0">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177" style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve" width="25px" height="25px">
+														<g>
+															<g>
+																<path class="menubar" d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z" fill="#00e2bd" />
+															</g>
+															<g>
+																<path class="menubar" d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z" fill="#00e2bd" />
+															</g>
+															<g>
+																<path class="menubar" d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z" fill="#00e2bd" />
+															</g>
+															<g>
+																<path class="menubar" d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z" fill="#00e2bd" />
+															</g>
+															<g>
+																<path class="menubar" d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z" fill="#00e2bd" />
+															</g>
+														</g>
+													</svg>
+												</a>
+												<nav class="cd-dropdown">
+                                                    <h2><a href="#">ISH<span>EDE</span></a></h2>
                                                     <a href="#0" class="cd-close">Close</a>
                                                     <ul class="cd-dropdown-content">
                                                         <li>
@@ -285,17 +238,10 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
                                                             </form>
                                                         </li>
                                                         <li class="has-children">
-                                                            <a href="#">Home</a>
+                                                            <a href="#">Acceuil</a>
 
-                                                            <ul class="cd-secondary-dropdown is-hidden">
-                                                                <li class="go-back"><a href="#">Menu</a></li>
-                                                                <li><a href="index.html">Home1</a></li>
-                                                                
-                                                                <li><a href="index_vi.html">Home6</a></li>
-                                                                <!-- .has-children -->
-
-                                                            </ul>
-                                                            <!-- .cd-secondary-dropdown -->
+                                                            
+                                                           
                                                         </li>
                                                         <!-- .has-children -->
 
@@ -305,7 +251,9 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
 
                                                             <ul class="cd-secondary-dropdown is-hidden">
                                                                 <li class="go-back"><a href="#0">Menu</a></li>
-                                                                  <li>
+                                                                
+
+                                                                <li>
                                                                     <a href="listing_single.html">listing-Single</a>
                                                                 </li>
                                                                 <!-- .has-children -->
@@ -315,40 +263,23 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
                                                         </li>
                                                         <!-- .has-children -->
                                                         <li class="has-children">
-                                                            <a href="#">candidates</a>
+                                                            <a href="#">Utilisateur</a>
 
                                                             <ul class="cd-secondary-dropdown is-hidden">
                                                                 <li class="go-back"><a href="#0">Menu</a></li>
-                                                                <li><a href="company_listing.html">Company-Listing</a>
-                                                                </li>
-                                                                <li><a
-                                                                        href="company_listing_single.html">Company-Single</a>
-                                                                </li>
-                                                                <li><a
-                                                                        href="candidate_listing.html">candidate-Listing</a>
-                                                                </li>
-                                                                <li><a
-                                                                        href="candidate_profile.html">candidate-Profile</a>
-                                                                </li>
+																<li><a href="company_listing.html">Liste des entreprises</a></li>
+																<li><a href="company_listing_single.html">Company-Single</a></li>
+																<li><a href="candidate_listing.html">Liste des candidat</a></li>
+																<li><a href="candidate_profile.html">Profil Candidat</a></li>
                                                                 <!-- .has-children -->
 
                                                             </ul>
                                                             <!-- .cd-secondary-dropdown -->
                                                         </li>
-                                                        <li class="has-children">
-                                                            <a href="#">Pages</a>
+														<li class="has-children">
+                                                            <a href="about.php">A propos</a>
 
-                                                            <ul class="cd-secondary-dropdown is-hidden">
-                                                                <li class="go-back"><a href="#0">Menu</a></li>
-                                                                <li><a href="about.html">About-Us</a></li>
-                                                               
-                                                                <li><a href="add_postin.html">Add-Posting</a></li>
-                                                                <li><a href="login.html">Login</a></li>
-                                                                <li><a href="register.html">Register</a></li>
-                                                               
-                                                                <!-- .has-children -->
-
-                                                            </ul>
+                                                            
                                                             <!-- .cd-secondary-dropdown -->
                                                         </li>
                                                         <!-- .has-children -->
@@ -368,7 +299,6 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
                                                                 <!-- .has-children -->
 
                                                                
-
                                                             </ul>
                                                             <!-- .cd-secondary-dropdown -->
                                                         </li>
@@ -376,10 +306,10 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
                                                         <li>
                                                             <a href="contact.html">Contact</a>
                                                         </li>
-                                                        <li>
+														<li>
                                                             <a href="register.html">Sign Up</a>
                                                         </li>
-                                                        <li>
+														<li>
                                                             <a href="login.html">Login</a>
                                                         </li>
 
@@ -389,17 +319,17 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
 
 
                                                 </nav>
-                                                <!-- .cd-dropdown -->
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- .cd-dropdown-wrapper -->
-                            </header>
-                        </div>
-                    </div>
-                    <!-- mobile menu area end -->
+												<!-- .cd-dropdown -->
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- .cd-dropdown-wrapper -->
+							</header>
+						</div>
+					</div>
+					<!-- mobile menu area end -->
+					
                    
                 </div>
             </div>
@@ -411,6 +341,15 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
         <div class="jp_tittle_img_overlay"></div>
         <div class="container">
             <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-xs hidden-sm full_width">
+						<div class="gc_header_wrapper">
+							<div class="gc_logo">
+								<a href="index.html">
+									<img src="images/index_vi/logo.png" alt="Logo" title="Job Pro" class="img-responsive">
+								</a>
+							</div>
+						</div>
+					</div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="jp_tittle_heading_wrapper">
                         <div class="jp_tittle_heading">
@@ -460,7 +399,7 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
                                         <h1><center><p>Créer votre compte </p></center></h1>
                                     </div>
                                     <div class="row clearfix">
-                                        <form action="admin.php" data-toggle="validator">
+                                        <form action="admin.php" data-toggle="validator" method="POST">
                                             <!--Form Group-->
                                             <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                             <label> Nom  </label>

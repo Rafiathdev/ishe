@@ -100,7 +100,7 @@ if (isset($_POST["btnAjouter"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>inscription_candidat</title>
 
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -606,73 +606,12 @@ if (isset($_POST["btnAjouter"])) {
                                         </form>
                                     </div>
                                     <div class="login_message">
-                                        <p>Vous avez déjà un compte? <a href="login.html"> Connexion </a> </p>
+                                        <p>Vous avez déjà un compte? <a href="login.php"> Connexion </a> </p>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade register_left_form" id="contentOne-2">
-                                    <div class="jp_regiter_top_heading">
-                                        <p>Fields with * are mandetory </p>
-                                    </div>
-                                    <div class="row clearfix">
-                                        <form action="#" data-toggle="validator">
-                                            <!--Form Group-->
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" name="field-name" value="" placeholder="Username*" required>
-                                            </div>
-                                            <!--Form Group-->
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                <input type="email" name="field-name" value="" placeholder="Email*" required>
-                                            </div>
-                                            <!--Form Group-->
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                <input type="password" name="password" value="" placeholder="password*" onChange="onChange()" required>
-                                            </div>
-                                            <!--Form Group-->
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                <input type="password" name="confirm" value="" onChange="onChange()" placeholder="re-enter password*" required>
-                                            </div>
-                                            <!--Form Group-->
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[7-9]{1}[0-9]{9}" required>
-                                            </div>
-
-                                            <!--Form Group-->
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" name="field-name" value="" placeholder="company name" required>
-                                            </div>
-
-                                            <!--Form Group-->
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-
-                                                <input type="text" name="field-name" value="" placeholder="website" required>
-
-                                            </div>
-                                            <!--Form Group-->
-                                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" name="field-name" value="" placeholder="address line">
-                                            </div>
-                                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                <div class="check-box text-center">
-                                                    <input type="checkbox" name="shipping-option" id="account-option_2">
-                                                    &ensp;
-                                                    <label for="account-option_2">I agreed to the <a href="#" class="check_box_anchr">Terms and Conditions</a> governing
-                                                        the
-                                                        use of jobportal</label>
-                                                </div>
-                                            </div>
-                                            <div class="login_btn_wrapper register_btn_wrapper login_wrapper">
-                                                <button type="submit" class="btn btn-primary login_btn">register</button>
-                                                <!-- <a href="javascript:;" class="btn btn-primary login_btn"> register </a> -->
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="login_message">
-                                        <p>Already a member? <a href="#"> Login Here </a> </p>
-                                    </div>
-                                </div>
+                                
                             </div>
-                            <p class="btm_txt_register_form">In case you are using a public/shared computer we recommend
-                                that you logout to prevent any un-authorized access to your account</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -720,8 +659,7 @@ if (isset($_POST["btnAjouter"])) {
                             <div class="jp_footer_first_cont_wrapper">
                                 <div class="jp_footer_first_cont">
                                     <h2>Who We Are</h2>
-                                    <p>This is Photoshop's version of Lom Ipsum. Proin gravida nibh vel velit auctor
-                                        aliquet. Aenean sollicitudin, lorem quis bibendum.
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas sequi quis, ex saepe aliquam itaque quo. Totam consequuntur suscipit praesentium eum alias facere reprehenderit, rem quisquam ad tempora sequi saepe.
                                         <br>
                                         <br> Proin akshay handge vel velit auctor aliquet. Aenean sollicitudin,
                                     </p>
@@ -806,7 +744,7 @@ if (isset($_POST["btnAjouter"])) {
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                     <div class="jp_bottom_footer_left_cont">
-                                        <p>© 2022-23 Job Pro. All Rights Reserved.</p>
+                                        <p>© 2022-23 ISHEDE. Projet de soutenance: Gestion de recrutement</p>
                                     </div>
                                     <div class="jp_bottom_top_scrollbar_wrapper">
                                         <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
