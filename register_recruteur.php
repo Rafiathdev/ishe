@@ -30,10 +30,10 @@ if (!$varCon) {
 mysqli_set_charset($varCon, "utf8");
 
 //vérifier l'existence des champs
-if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& isset($_POST["rccm"])&& isset($_POST["telephone"])&& isset($_POST["adresse"])&& isset($_POST["site_web"])&& isset($_POST["email"])&& isset($_POST["password"])){
+if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["ifu"])&& isset($_POST["rccm"])&& isset($_POST["telephone"])&& isset($_POST["adresse"])&& isset($_POST["site_web"])&& isset($_POST["email"])&& isset($_POST["password"])){
     $nom_U = $_POST["nom_U"];
     $nom_E = $_POST["nom_E"];
-    $nºifu = $_POST["nºifu"];
+    $nºifu = $_POST["ifu"];
     $rccm = $_POST["rccm"];
     $telephone = $_POST["telephone"];
     $adresse = $_POST["adresse"];
@@ -63,7 +63,7 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& 
                         
         //c'est bon on peut ajouter
         $reqAexecuter = "INSERT INTO Employeur (nom_U, nom_E, nºifu, rccm, telephone, adresse, site_web, email, password) 
-        VALUES ('$nom_U', '$nom_E', '$nºifu', '$rccm', '$telephone', '$adresse', '$site_web', '$email', '$password')";
+        VALUES ('$nom_U', '$nom_E', '$ifu', '$rccm', '$telephone', '$adresse', '$site_web', '$email', '$password')";
 
         $resultat = mysqli_query($varCon, $reqAexecuter);
 
@@ -299,7 +299,7 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& 
                                                     </svg>
                                                 </a>
                                                 <nav class="cd-dropdown">
-                                                    <h2><a href="#">Job<span>Pro</span></a></h2>
+                                                    <h2><a href="#">ISH<span>EDE</span></a></h2>
                                                     <a href="#0" class="cd-close">Close</a>
                                                     <ul class="cd-dropdown-content">
                                                         <li>
@@ -501,7 +501,7 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& 
                                             <!--Form Group-->
                                             <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                             <label>NºIFU</label>
-                                            <input type="text" name="nºifu" id="nºifu"  placeholder="entrez l'IFU"
+                                            <input type="text" name="ifu" id="ifu"  placeholder="entrez l'IFU"
                                                     required>
 
                                             </div>
@@ -611,7 +611,7 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& 
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="jp_footer_logo_wrapper">
                             <div class="jp_footer_logo">
-                                <a href="#"><img src="images/content/resume_logo.png" alt="footer_logo" /></a>
+                                <a href="#"><img src="images/content/k.png" alt="footer_logo" /></a>
                             </div>
                         </div>
                     </div>
@@ -620,8 +620,7 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& 
                             <div class="jp_footer_first_cont_wrapper">
                                 <div class="jp_footer_first_cont">
                                     <h2>Who We Are</h2>
-                                    <p>This is Photoshop's version of Lom Ipsum. Proin gravida nibh vel velit auctor
-                                        aliquet. Aenean sollicitudin, lorem quis bibendum.
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur aut autem eius sequi nobis, repellendus dolore dignissimos architecto non odit tempora inventore amet praesentium voluptatem velit quasi repudiandae incidunt tenetur?
                                         <br>
                                         <br> Proin akshay handge vel velit auctor aliquet. Aenean sollicitudin,
                                     </p>
@@ -657,7 +656,7 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["nºifu"])&& 
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="jp_footer_candidate_wrapper jp_footer_candidate_wrapper3">
                                 <div class="jp_footer_candidate">
-                                    <h2>For Employers</h2>
+                                    <h2>Recruteurs</h2>
                                     <ul>
                                         <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Browse
                                                 candidates</a></li>

@@ -989,7 +989,7 @@
                             <div class="jp_footer_first_cont_wrapper">
                                 <div class="jp_footer_first_cont">
                                     <h2>Who We Are</h2>
-                                    <p>This is Photoshop's version of Lom Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum.<br><br> Proin akshay handge vel velit auctor aliquet. Aenean sollicitudin,</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, temporibus? Aperiam, reprehenderit, dignissimos facere maiores laboriosam natus at iure consequuntur voluptatem facilis nulla ullam assumenda tempore. Autem veritatis doloremque aut.</p>
                                     <ul>
                                         <li><i class="fa fa-plus-circle"></i> <a href="#">READ MORE</a></li>
                                     </ul>

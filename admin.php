@@ -511,7 +511,7 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="jp_footer_logo_wrapper">
                             <div class="jp_footer_logo">
-                                <a href="#"><img src="images/content/resume_logo.png" alt="footer_logo" /></a>
+                                <a href="#"><img src="images/content/k.png" alt="footer_logo" /></a>
                             </div>
                         </div>
                     </div>
@@ -519,9 +519,8 @@ if (isset($_POST["nom_a"])&& isset($_POST["prenom_a"])&& isset($_POST["adresse"]
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="jp_footer_first_cont_wrapper">
                                 <div class="jp_footer_first_cont">
-                                    <h2>Who We Are</h2>
-                                    <p>This is Photoshop's version of Lom Ipsum. Proin gravida nibh vel velit auctor
-                                        aliquet. Aenean sollicitudin, lorem quis bibendum.
+                                    <h2>Qui sommes-nous?</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim temporibus quos qui nam eveniet ex laudantium corporis voluptatem cumque minima saepe distinctio, dignissimos laboriosam vitae delectus doloremque ratione animi.
                                         <br>
                                         <br> Proin akshay handge vel velit auctor aliquet. Aenean sollicitudin,
                                     </p>
