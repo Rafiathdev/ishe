@@ -1,92 +1,65 @@
+
+
+	<?php
+	
+	include("connexion.php");
+	// Démarrer la session
+	session_start();
+
+	// Vérifier si l'utilisateur est connecté
+	if (isset($_SESSION["id"])) {
+		// Inclure le fichier de configuration de la base de données
+		
+
+		// Récupérer l'identifiant de l'utilisateur connecté
+		$id = $_SESSION["id"];
+
+		// Sélectionner l'utilisateur connecté dans la table "employer"
+		$sql = "SELECT * FROM candidat WHERE id = $id";
+		$result = mysqli_query($conn, $sql);
+
+		if (mysqli_num_rows($result) == 1) {
+			// Afficher les informations de l'utilisateur dans un formulaire
+			$row = mysqli_fetch_assoc($result);
+			echo "<form>";
+			echo "<label>Nom : </label><input type='text' value='" . $row["nom_c"] . "'><br>";
+			echo "<label>Prénom : </label><input type='text' value='" . $row["prenom_c"] . "'><br>";
+			echo "<label>Sexe : </label><input type='text' value='" . $row["sexe"] . "'><br>";
+			echo "<label>Date de naissance : </label><input type='text' value='" . $row["date_n"] . "'><br>";
+			echo "<label>Niveau d'études : </label><input type='text' value='" . $row["niveau"] . "'><br>";
+			echo "<label>Nationalité : </label><input type='text' value='" . $row["nationalite"] . "'><br>";
+			echo "<label>Adresse : </label><input type='text' value='" . $row["adresse"] . "'><br>";
+			echo "<label>Qualification : </label><input type='text' value='" . $row["qualification"] . "'><br>";
+			echo "<label>Années d'expérience : </label><input type='text' value='" . $row["annee_experience"] . "'><br>";
+			echo "<label>Numéro de téléphone : </label><input type='text' value='" . $row["telephone"] . "'><br>";
+			echo "<label>Département : </label><input type='text' value='" . $row["departement"] . "'><br>";
+			echo "<label>Ville : </label><input type='text' value='" . $row["ville"] . "'><br>";
+			echo "<label>PDF CV : </label><a href='" . $row["pdf_cv"] . "'>Télécharger</a><br>";
+			echo "<label>Photo : </label><img src='" . $row["photo"] . "' width='100'><br>";
+			echo "<label>Adresse e-mail : </label><input type='text' value='" . $row["email"] . "'><br>";
+			echo "</form>";
+		} else {
+			echo "Erreur : utilisateur introuvable dans la base de données";
+		}
+
+		// Fermer la connexion à la base
+ }
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-	<title>ISHEDE</title>
-	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-	<meta name="description" content="Job Pro" />
-	<!--srart theme style -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" />
-	<link rel="stylesheet" type="text/css" href="css/flaticon.css" />
-	<link rel="stylesheet" type="text/css" href="css/style_vi.css" />
-	<link rel="stylesheet" type="text/css" href="css/responsive_vi.css" />
-	<!-- favicon links -->
-	<link rel="shortcut icon" type="image/png" href="images/header/favicon.ico" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mon profil</title>
 </head>
-<body>
-<div id="preloader">
-        <div id="status"><img src="images/header/loadinganimation.gif" id="preloader_image" alt="loader">
-        </div>
-    </div>
-     <!-- Top Scroll End -->
-    <!-- Top Header Wrapper Start -->
-    <div class="jp_top_header_main_wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="jp_top_header_left_wrapper">
-                        <div class="jp_top_header_left_cont">
-                            <p><i class="fa fa-phone"></i> &nbsp;Phone &nbsp;+123456789</p>
-                            <p class=""><i class="fa fa-envelope"></i> &nbsp;Email :&nbsp;<a href="#"><span class="__cf_email__" data-cfemail="4b0e262a22270b2e332a263b272e65282426">[email&#160;protected]</span></a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="jp_top_header_right_wrapper">
-                        
-                        <div class="jp_top_header_right__social_cont">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Top Header Wrapper End -->
-    <main>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="jp_adp_choose_resume">
-						  
-						<div class="custom-input">
-						  <span><i class="fa fa-upload"></i> &nbsp;Déposer CV</span>
-						  <input type="file" name="resume" id="resume" />
-						</div>
 
-                        <div class="custom-input">
-						  <span><i class="fa fa-add"></i> &nbsp;Pièces justificatifes</span>
-						  <input type="file" name="resume" id="resume" />
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="jp_adp_choose_resume_bottom_btn_post">
-						
-                        <span><i class="fa fa-upload"></i> &nbsp;Mise à jour Documents</span>
-						  <input type="file" name="resume" id="resume" /> 
-						
-					</div>
-                    <table> Candidature
-                        <td>
-                        <tr> id</tr>
-                        
-                        <tr>offre</tr>
-                        <tr>Statut</tr>
-                      <tr></tr>
-                    </td></table>
-				</div>
-    </main>
+<body>
+
+
+	
+	<h1>Mon profil</h1>
 </body>
 </html>

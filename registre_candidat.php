@@ -1,4 +1,6 @@
 <?php
+
+include("connexion.php");
 //les variables pour récupérer les infos enoyées
 $nom_c = "";
 $prenom_c = "";
@@ -17,21 +19,6 @@ $photo = "";
 $email = "";
 $password = "";
 
-//renseigner les paramettres de connexion à la base de donnée
-$nomServeur = "localhost";
-$nomBD = "ishede";
-$nomUtilisateur = "ola";
-$motPasse = "rafiath";
-
-
-//on utilise ici une variable nommée $varCon  pour récupérer le resultats de le connection à la BD
-$varCon = mysqli_connect($nomServeur, $nomUtilisateur, $motPasse, $nomBD);
-
-//on sort si la tentative de se connecter à la BD a échoué
-if (!$varCon) {
-    die("Echec de connection");
-    # code...
-}
 
 // je veux spécifier l'encodage des caractère
 mysqli_set_charset($varCon, "utf8");
@@ -87,9 +74,13 @@ if (isset($_POST["btnAjouter"])) {
             alert("Compte créer avec succès !");
         </script>
 
-<?php                          }
+<?php   
+header('Location: page_candidat.php');
+exit();
+                       }
 }
 
+require_once "recruteur.php";
 
 ?>
 

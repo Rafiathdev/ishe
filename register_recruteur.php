@@ -1,8 +1,10 @@
 <?php
-//les variables pour récupérer les infos enoyées
+
+include("connexion.php");
+// Les variables pour récupérer les infos envoyées
 $nom_U = "";
 $nom_E = "";
-$nºifu = "";
+$ifu = "";
 $rccm = "";
 $telephone = "";
 $adresse = "";
@@ -10,77 +12,36 @@ $site_web = "";
 $email = "";
 $password = "";
 
-//renseigner les paramettres de connexion à la base de donnée
-$nomServeur = "localhost";
-$nomBD = "ishede";
-$nomUtilisateur = "ola";
-$motPasse = "rafiath";
 
 
-//on utilise ici une variable nommée $varCon  pour récupérer le resultats de le connection à la BD
-$varCon = mysqli_connect($nomServeur, $nomUtilisateur, $motPasse, $nomBD);
+// Récupérer les informations du formulaire
+if (isset($_POST['submit'])) {
+  $nom_U = $_POST['nom_U'];
+  $nom_E = $_POST['nom_E'];
+  $ifu = $_POST['ifu'];
+  $rccm = $_POST['rccm'];
+  $telephone = $_POST['telephone'];
+  $adresse = $_POST['adresse'];
+  $site_web = $_POST['site_web'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+  
+  
+  
+  // Requête d'insertion des informations de l'entreprise dans la table
+  $sql = "INSERT INTO entreprises (nom_U, nom_E, ifu, rccm, telephone, adresse, site_web, email, password)
+  VALUES ('$nom_U', '$nom_E', '$ifu', '$rccm', '$telephone', '$adresse', '$site_web', '$email', '$password')";
 
-//on sort si la tentative de se connecter à la BD a échoué
-if (!$varCon) {
-    die("Echec de connection");
-    # code...
+  if (mysqli_query($conn, $sql)) {
+    echo "Enregistrement effectué avec succès";
+  } else {
+    echo "Erreur d'enregistrement : " . mysqli_error($conn);
+  }
+
+  mysqli_close($conn);
+
+  require_once "recruteur.php";
 }
-
-// je veux spécifier l'encodage des caractère
-mysqli_set_charset($varCon, "utf8");
-
-//vérifier l'existence des champs
-if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["ifu"])&& isset($_POST["rccm"])&& isset($_POST["telephone"])&& isset($_POST["adresse"])&& isset($_POST["site_web"])&& isset($_POST["email"])&& isset($_POST["password"])){
-    $nom_U = $_POST["nom_U"];
-    $nom_E = $_POST["nom_E"];
-    $nºifu = $_POST["ifu"];
-    $rccm = $_POST["rccm"];
-    $telephone = $_POST["telephone"];
-    $adresse = $_POST["adresse"];
-    $site_web = $_POST["site_web"];
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-
-}
-
-              if(isset($_POST["btnAjouter"])){
-
-                //verification de l'existance ou non d'un utilisateur
-   $reqAexecuter = "Select * From Employeur Where nºifu = '$nºifu'";
-   $resultat = mysqli_query($varCon, $reqAexecuter);
-
-   //on compte le nombre d'enrégistrements dont l'email est identique au mail envoyé
-   //si le nombre est supérieur à 1 ce n'est pas bon
-
-   if (mysqli_num_rows($resultat)>=1) {
-    //y a probleme
-    ?>
-            <script>
-                alert("entreprise existant");
-            </script>
-    <?php
-   }else {
-                        
-        //c'est bon on peut ajouter
-        $reqAexecuter = "INSERT INTO Employeur (nom_U, nom_E, nºifu, rccm, telephone, adresse, site_web, email, password) 
-        VALUES ('$nom_U', '$nom_E', '$ifu', '$rccm', '$telephone', '$adresse', '$site_web', '$email', '$password')";
-
-        $resultat = mysqli_query($varCon, $reqAexecuter);
-
-    ?>
-
-    <script>
-     alert("Compte créer avec succès !");
-     </script>
-
-    <?php                          }
-
-                   
-
-   }
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -559,7 +520,7 @@ if (isset($_POST["nom_U"])&& isset($_POST["nom_E"])&& isset($_POST["ifu"])&& iss
                                                 </div>
                                             </div>
                                             <div class="login_btn_wrapper register_btn_wrapper login_wrapper ">
-                                                <button type="submit" name="btnAjouter" class="btn btn-primary login_btn">S'inscrire</button>
+                                                <button type="submit" name="btnAjouter" class="btn btn-primary login_btn" >S'inscrire</button>
                                                 <!-- <a type="submit" href="javascript:;" class="btn btn-primary login_btn"> register </a> -->
                                             </div>
                                         </form>
